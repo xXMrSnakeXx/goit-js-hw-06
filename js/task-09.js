@@ -6,6 +6,6 @@ const spanRef = document.querySelector(`.color`);
 btnRef.addEventListener(`click`, changesBackgroundColorOfBody);
 
 function changesBackgroundColorOfBody(event) {
-  document.body.style.backgroundColor = `${getRandomHexColor()}`;
-  spanRef.textContent = `${getRandomHexColor()}`;
+  const backgroundColorOfBody=document.body.style.backgroundColor = `${getRandomHexColor()}`;
+  spanRef.textContent = `${backgroundColorOfBody}`;
 }
